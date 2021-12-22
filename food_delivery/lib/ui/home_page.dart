@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'body_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,9 +10,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 3;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
+      body: BodyWidget(),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         selectedItemColor: Colors.orange,
