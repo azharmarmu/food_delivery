@@ -4,12 +4,16 @@ class FoodItemModel {
   final double rating;
   final String name;
   final double price;
+  final String? city;
+  final double? km;
 
-  FoodItemModel({
+  const FoodItemModel({
     required this.id,
     required this.imgUrl,
     required this.rating,
     required this.name,
     required this.price,
+    this.city,
+    this.km,
   });
 }

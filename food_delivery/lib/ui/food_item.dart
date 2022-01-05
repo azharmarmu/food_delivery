@@ -3,10 +3,10 @@ import 'package:food_delivery/model/food_item_model.dart';
 
 import 'image_widget.dart';
 
-class FoodItem extends StatelessWidget {
+class FoodHorizontalItem extends StatelessWidget {
   final FoodItemModel foodItem;
 
-  const FoodItem({
+  const FoodHorizontalItem({
     Key? key,
     required this.foodItem,
   }) : super(key: key);

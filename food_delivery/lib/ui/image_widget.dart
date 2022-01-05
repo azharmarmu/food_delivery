@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 
 class ImageWidget extends StatelessWidget {
   final String imgUrl;
-  const ImageWidget({Key? key, required this.imgUrl}) : super(key: key);
+  final double? width;
+  final double? height;
+
+  const ImageWidget({Key? key, required this.imgUrl, this.width, this.height})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +16,8 @@ class ImageWidget extends StatelessWidget {
       ),
       child: Image.network(
         imgUrl,
-        width: double.infinity,
-        height: 100,
+        width: width ?? double.infinity,
+        height: height ?? 100,
         fit: BoxFit.cover,
       ),
     );
